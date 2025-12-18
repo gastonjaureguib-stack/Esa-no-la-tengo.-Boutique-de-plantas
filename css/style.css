@@ -1,0 +1,821 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media screen and (min-width: 991px) {
+}
+
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*  columnas: Recordatorio personal */
+    grid-template-rows: auto auto auto;
+    /* Filas: Recordatorio personal  */
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "comunity comunity comunity"
+        "footer footer footer";
+
+    min-height: 100vh;
+}
+
+
+/* --- Header ---- */
+
+header {
+    text-align: center;       
+    position: relative;       
+                 
+    display: flex;  
+    flex-direction: column;          
+    grid-area: header;        
+    justify-content: center;  
+    align-items: center;      
+    background-image: url("../media/img/index/fondodepantallaparaheader.png"); 
+    background-size: cover;   
+    background-position: right; 
+    height: 70vh;           
+}
+
+/*ESTILO A LA IMAGEN DEL LOGO*/
+.imagenlogo img {
+    width: 350px;           
+    height: auto;
+    position: relative;
+    top: -30px; 
+}
+
+
+/*ESTILO AL CONTENEDOR DEL TEXTO PRINCIPAL*/
+.titulo {
+           
+    top: 300px;               
+    text-align: center;     
+      
+}
+
+/*ESTILO AL TEXTO PRINCIPAL*/
+.titulo h1 {
+    font-size: 42px;          
+    font-weight: bold;        
+    color: white;           
+}
+
+/*ESTILO AL MENU*/
+.nav {
+    background-color: #033; 
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: rgb(206, 206, 30) !important;
+}
+
+.nav-pills .nav-link.active {
+    background-color: rgb(206, 206, 30) !important;
+    color: white !important;
+}
+
+.nav-principal {
+    padding: 10px !important;
+    position: absolute;
+    bottom: 40px;
+    
+}
+/*Uso de important, porque boostrap no me permite sobreescribir el padding, sugerencia de Chat GPT*/
+
+
+/*=== TITULO PRINCIPAL  ===*/
+
+/* Título principal */
+.tituloprincipal {
+    font-size: 2.4rem;
+    color: white;
+    text-align: center;
+    display: flex;    
+}
+
+/*----- Login ------*/
+
+/*ESTILO A LA CAJA VERDE OSCURA*/
+.menu {
+    position: absolute;           
+    top: 0px;                    
+    right: 40px;                  
+    background-color: #0A3F2D;  
+    padding: 30px;               
+    border-radius: 0 0 20px 20px; 
+}
+
+/*ESTILO A CADA OPCIÓN DENTRO DE LA CAJA VERDE*/
+.opcionmenu {
+    background-color: #F0D54B; 
+    border-radius: 20px;         
+    display: flex;              
+    align-items: center;         
+    justify-content: center;     
+    padding: 6px 14px;           
+    margin-top: 10px;            
+}
+
+/*ESTILO A LAS ETIQUETAS DENTRO DE CADA OPCION AMARILLA*/
+.opcionmenu a {
+    text-decoration: none;     
+    color: #0A3F2D;          
+    font-weight: bold;        
+    padding: 4px 0;            
+}
+
+.login {
+    grid-area: header;
+    background-color: #044;
+    display: flex;
+    padding: 100px 10px;
+    border-radius: 20px;
+    flex-direction: row;
+}
+
+section.login div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+section.login a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    width: 120px;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: rgb(151, 151, 36);
+    color: white;
+}
+
+/*=== MAIN  === */
+
+
+main {
+    grid-area: main;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: #044;
+}
+
+/* ----CARD DE PLANTA  ----- */
+
+.col-md-4 {
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+
+  background-color: rgb(151, 151, 36);
+  border-radius: 20px;
+  padding: 20px;
+
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.row {
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+  gap: 100px; 
+}
+
+
+/* Título horizontal  */
+.col-md-4 h2 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* Imagen */
+.col-md-4 img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+
+/* Botón */
+.caja_plantas a {
+  margin-top: 10px;
+  align-self: flex-start;
+
+  text-decoration: none;
+  background-color: #2d6a4f;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 12px;
+}
+
+
+
+/* Contenedor Comunidad */
+.comunidad_plantas {
+  background-color: rgb(151, 151, 36); 
+  border-radius: 20px;       
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  max-width: 800px;         
+  margin: 0 auto;           
+  display: flex;
+  flex-direction: column;  
+  gap: 15px;
+}
+
+/* Imagen ocupa todo el ancho */
+.comunidad_plantas img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px; 
+  object-fit: cover;  
+}
+
+/* Título */
+.comunidad_plantas h2 {
+  color: white;
+  margin: 0;
+  font-size: 2rem;
+}
+
+/* Párrafo */
+.comunidad_plantas p {
+  color: #fff;       /* Blanco sobre rojo */
+  margin: 0;
+  line-height: 1.6;
+  font-weight: bold;
+}
+
+/* Primera letra del párrafo */
+.comunidad_plantas p::first-letter {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Botón */
+.comunidad_plantas a {
+  display: inline-block;
+  color: white;
+  background-color: #044; 
+  text-decoration: none;
+  padding: 10px 22px;
+  border-radius: 40px;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.comunidad_plantas a:hover {
+  background-color: #022; /* Efecto hover */
+}
+
+
+/* ===== FOOTER GENERAL ===== */
+footer {
+    grid-area: footer;
+    background-color: #033;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    background-color: #033;
+    color: white;
+    padding: 50px 20px;
+    position: relative;
+}
+
+
+
+/* ===== GRID DE 3 COLUMNAS ===== */
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    align-items: start;
+    position: relative;
+}
+
+/* Columnas */
+.footer-col {
+    padding: 0 20px;
+    position: relative;
+    min-height: 250px;
+    
+}
+
+/* Líneas blancas entre columnas */
+.footer-col:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: white;
+    opacity: 0.3;
+    
+}
+
+/* Títulos */
+.footer-col h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+/* ===== Lista de enlaces columna 1 ===== */
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Columna 2: mapa + texto ===== */
+.footer-map {
+    width: 200px;
+    margin-bottom: 15px;
+}
+
+.footer-center {
+    text-align: center;
+}
+
+.footer-copy {
+    opacity: 0.8;
+    margin-top: 10px;
+}
+
+/* ===== Columna 3: redes sociales ===== */
+.footer-redes {
+    list-style: none;
+    padding: 20px;
+}
+
+.footer-redes li {
+    margin-bottom: 10px;
+}
+
+.footer-redes img {
+    width: 22px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.footer-redes a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-redes a:hover {
+    text-decoration: underline;
+}
+
+
+/* ===== BOTÓN FLOTANTE WHATSAPP ===== */
+
+
+.wpbottom img {
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    border-radius: 50%;
+    right: 20px;
+    bottom: 30px;
+    
+}
+
+
+/* ===== RESPONSIVE ===== 
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-col:not(:last-child)::after {
+        display: none;
+    }
+}*/
+
+/* ===== PAGINA CATALOGO ===== */
+
+/* ---- Carrusel  ---- */
+
+.catalogo,
+.exoticas {
+  text-align: center; 
+}
+
+.catalogo h2,
+.exoticas h2 {
+ 
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+
+  background-color: rgb(151, 151, 36);
+  color: #044;
+
+  border-radius: 50px;
+}
+
+.catalogo .carousel-inner img,
+.exoticas .carousel-inner img {
+  width: 50%;
+  max-width: 520px;
+  border-radius: 20px;
+}
+
+.exoticas .carousel-inner {
+    text-align: center;
+}
+
+/* ===== Movil  ===== 
+@media (max-width: 768px) {
+
+  .catalogo h2,
+  .exoticas h2 {
+    font-size: 1.8rem;
+    padding: 12px 20px;
+    margin: 20px auto;
+  }
+
+  .catalogo .carousel-inner img,
+  .exoticas .carousel-inner img {
+    width: 90%;
+    max-width: none;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .catalogo h2,
+  .exoticas h2 {
+    font-size: 3.2rem;
+  }
+
+  .catalogo .carousel-inner img,
+  .exoticas .carousel-inner img {
+    width: 45%;
+  }
+}*/
+
+
+/* ===== Cards plantas===== */
+.card-plantas {
+    padding: 80px 20px;
+}
+
+/* ===== CONTENEDOR ===== */
+.container-plantas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+/* ===== PRECIO ===== */
+.card {
+  position: relative;
+}
+
+.precio {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  background-color: white;
+  color: #033;
+
+  padding: 8px 16px;
+  border-radius: 30px;
+
+  font-weight: bold;
+  font-size: 0.9rem;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+
+/* ===== CARD ===== */
+.card {
+  background: linear-gradient(180deg, #044, #022);
+  border-radius: 20px;
+  overflow: hidden;
+
+  width: 18rem;
+  color: #fff;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover elegante */
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+
+
+
+/* ===== CUERPO ===== */
+.card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+ 
+}
+
+.card-text {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  opacity: 0.9;
+}
+
+.card h5,
+.card p {
+  color: #fff;
+}
+
+
+/* ===== LISTA ===== */
+.list-group {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-group-item {
+  padding: 12px 20px;
+  font-size: 0.9rem;
+
+  background-color: rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+
+/* ===== BOTÓN ===== */
+.card-link {
+  display: inline-block;
+  margin-top: 10px;
+
+  padding: 12px 24px;
+  border-radius: 30px;
+
+  background-color: rgb(151, 151, 36);
+  color: #033;
+  font-weight: bold;
+  text-decoration: none;
+
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.card-link:hover {
+  background-color: rgb(180, 180, 60);
+  transform: scale(1.05);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+/* ===== SECCIÓN EXÓTICAS ===== */
+.card-exoticas {
+   padding: 80px 20px;
+}
+
+/* ===== CONTENEDOR ===== */
+.card-exoticas .container {
+  display: flex;
+  flex-wrap: wrap;              /* permite 2 filas */
+  justify-content: center;      /* centra el bloque */
+  gap: 30px;
+
+  max-width: 1100px;            /* ancho justo para 3 cards */
+  margin: 0 auto;
+}
+
+
+/* ===== Card exÓticas ===== */
+.card-exoticas .card {
+  width: 18rem;
+    border-radius: 20px;
+  overflow: hidden;
+  color: #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-exoticas .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+
+/* ===== CUERPO ===== */
+.card-exoticas .card-body {
+  text-align: center;
+  padding: 20px;
+}
+
+
+/* ===== BOTÓN ===== */
+.card-exoticas .card-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 26px;
+  border-radius: 30px;
+
+  background-color: rgb(151, 151, 36);
+  font-weight: bold;
+  text-decoration: none;
+  transition: transfor
+}
+
+/* ===== Pagina Nosotros ===== */
+
+.nosotros {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.nosotros img {
+    border-radius: 20px;
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.margarita {
+    background-color: rgb(151, 151, 36);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.margarita p {
+    margin-top: 20px;
+}
+
+.tomas {
+    background-color: rgb(151, 151, 36);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.tomas p {
+    margin-top: 20px;
+}
+
+/* ===== Pagina Contacto ===== */
+
+/* ===== Título contacto ===== */
+.titulocontacto {
+    text-align: center;
+    background-color: rgb(151, 151, 36);
+    color: #044;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+/* ===== Contenedor principal ===== */
+.contacto {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas: imagen, texto, mapa */
+    gap: 20px;
+    align-items: center; 
+    padding: 0 20px 20px 20px;
+}
+
+
+/* ===== Imagen ===== */
+.contacto-img {
+    width: 60%;
+    border-radius: 15px;
+}
+
+/* ===== Datos de contacto ===== */
+.contacto ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contacto ul li {
+    margin-bottom: 10px;
+    color: white;
+    text-align: start;
+}
+
+.contacto ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* ===== Mapa ===== */
+
+.mapa {
+    width: 100%;        
+    max-width: 400px;   
+    height: 300px;      
+    overflow: hidden;   
+}
+
+.mapa iframe {
+    width: 100%;      
+    height: 100%;      
+    border: 0;         
+}
+
+
+/* ===== Responsive ===== */
+@media screen and (max-width: 991px) {
+    .contacto {
+        grid-template-columns: 1fr; /* apila todo */
+        text-align: center;
+    }
+
+    .contacto-img {
+        margin-bottom: 15px;
+    }
+  }
+
+
+/* ===== Pagina Comunidad===== */
+
+.comunidadplantil{
+  display: flex;
+  flex-direction: column-reverse
+  
+}
+
+.comunidadplantil img {
+  width: 100%;
+  height: 800px; 
+  object-fit: cover; 
+  border-radius: 40px;
+}
+
+.textoscomunidad h3{
+    color: rgb(151, 151, 36);
+   text-align: center;
+    margin-top: 30px;
+    background-color: rgb(7, 39, 13);
+    border-radius: 20px;
+
+ 
+
+}
+.textoscomunidad p{
+  color: white;
+  font-style: italic;
+  
+}
+
+.textoscomunidad p::first-letter  {
+  font-size: 2rem;
+}
