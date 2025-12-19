@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Segunda Entrega</title>
-       <!-- Boostrap -->
+    <!-- Boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-         <!-- Archivo CSS principal -->
+    <!-- Archivo CSS principal -->
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
@@ -30,40 +30,40 @@
         </div>
 
         <!-- nav principal con boostrap -->
-<nav class="navbar navbar-expand-lg menuburger">
-  
-    <div class="container-fluid">
-    
-    <!-- Botón hamburguesa -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
-        aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-  <span class="navbar-toggler-icon"></span>
-</button>
+        <nav class="navbar navbar-expand-lg menuburger">
+
+            <div class="container-fluid">
+
+                <!-- Botón hamburguesa -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+                    aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
 
 
-    <!-- Menú que colapsa -->
-    <div class="collapse navbar-collapse" id="navbarMenu">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link active" href="./index.html">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="./pages/nosotros.html">Nosotros</a></li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-             aria-expanded="false">Catálogo</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Interior</a></li>
-            <li><a class="dropdown-item" href="#">Exterior</a></li>
-            <li><a class="dropdown-item" href="#">Exóticas</a></li>
-            <li><a class="dropdown-item" href="#">Productos</a></li>
+                <!-- Menú que colapsa -->
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="./index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/nosotros.html">Nosotros</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Catálogo</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./pages/catalogo.html">Interior</a></li>
+                                <li><a class="dropdown-item" href="./pages/catalogo.html">Exterior</a></li>
+                                <li><a class="dropdown-item" href="./pages/catalogo.html">Exóticas</a></li>
+                                <li><a class="dropdown-item" href="./pages/catalogo.html">Productos</a></li>
 
-          </ul>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
-        <li class="nav-item"><a class="nav-link" href="./pages/comunidad.html">Comunidad</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/comunidad.html">Comunidad</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
 
         <!-- Submenú / Login de la comunidad -->
@@ -78,95 +78,85 @@
 
     </header>
 
-    
+
     <!-- ========== BLOQUE 2: MAIN (Contenido principal del sitio) ========== -->
 
-<main>
+    <main>
 
-    <!-- ===== CATÁLOGO ===== -->
-    <section class="catalogo">
+        <!-- ===== CATÁLOGO ===== -->
+        <section class="catalogo">
 
-        <!-- Card plantas -->
-        <article class="catalogo-card">
+            <!-- Card plantas -->
+            <article class="catalogo-card">
 
-            <h2 class="catalogo-titulo">Nuestras plantas</h2>
+                <h2 class="catalogo-titulo">Nuestras plantas</h2>
 
-            <img 
-                src="./media/img/index/portadamonsteraadanzonii.png" 
-                alt="Portada Monstera Adanzonii"
-                class="catalogo-img"
-            >
+                <img src="./media/img/index/portadamonsteraadanzonii.png" alt="Portada Monstera Adanzonii"
+                    class="catalogo-img">
 
-            <div class="caja-plantas">
-                <div class="catalogo-texto">
-                    <h3>Monstera Adanzonii</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <div class="caja-plantas">
+                    <div class="catalogo-texto">
+                        <h3>Monstera Adanzonii</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+
+                    <a href="./pages/catalogo.html" class="btn-catalogo">
+                        Buscar plantas
+                    </a>
                 </div>
 
-                <a href="./pages/catalogo.html" class="btn-catalogo">
-                    Buscar plantas
-                </a>
-            </div>
+            </article>
 
-        </article>
+            <!-- Card exóticas -->
+            <article class="catalogo-card">
 
-        <!-- Card exóticas -->
-        <article class="catalogo-card">
+                <h2 class="catalogo-titulo">Nuestras Exóticas</h2>
 
-            <h2 class="catalogo-titulo">Nuestras Exóticas</h2>
+                <img src="./media/img/index/portadamonsteravariegada.png" alt="Portada Monstera Variegada"
+                    class="catalogo-img">
 
-            <img 
-                src="./media/img/index/portadamonsteravariegada.png" 
-                alt="Portada Monstera Variegada"
-                class="catalogo-img"
-            >
+                <div class="caja-plantas">
+                    <div class="catalogo-texto">
+                        <h3>Monstera Adanzonii</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
 
-            <div class="caja-plantas">
-                <div class="catalogo-texto">
-                    <h3>Monstera Adanzonii</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <a href="./pages/catalogo.html" class="btn-catalogo">
+                        Buscar plantas
+                    </a>
                 </div>
 
-                <a href="./pages/catalogo.html" class="btn-catalogo">
-                    Buscar plantas
-                </a>
-            </div>
+            </article>
 
-        </article>
-
-    </section>
+        </section>
 
 
-    <!-- ===== COMUNIDAD ===== -->
-    <section class="comunidad">
+        <!-- ===== COMUNIDAD ===== -->
+        <section class="comunidad">
 
-        <article class="comunidad-card">
+            <article class="comunidad-card">
 
-            <img 
-                src="./media/img/index/aceitesneem.png" 
-                alt="Imagen de aceite de neem"
-                class="comunidad-img"
-            >
+                <img src="./media/img/index/aceitesneem.png" alt="Imagen de aceite de neem" class="comunidad-img">
 
-            <div class="comunidad-texto">
-                <h2>Mucho más que un árbol.</h2>
+                <div class="comunidad-texto">
+                    <h2>Mucho más que un árbol.</h2>
 
-                <p>
-                    El aceite de neem es un aliado natural imprescindible para el cuidado de tus plantas.
-                    Extraído de las semillas del árbol de neem, actúa como insecticida y fungicida orgánico,
-                    ayudando a proteger tus plantas de plagas sin dañar el entorno.
-                </p>
+                    <p>
+                        El aceite de neem es un aliado natural imprescindible para el cuidado de tus plantas.
+                        Extraído de las semillas del árbol de neem, actúa como insecticida y fungicida orgánico,
+                        ayudando a proteger tus plantas de plagas sin dañar el entorno.
+                    </p>
 
-                <a href="./pages/comunidad.html" class="btn-comunidad">
-                    Conocer comunidad plantil
-                </a>
-            </div>
+                    <a href="./pages/comunidad.html" class="btn-comunidad">
+                        Conocer comunidad plantil
+                    </a>
+                </div>
 
-        </article>
+            </article>
 
-    </section>
+        </section>
 
-</main>
+    </main>
 
 
     <!-- ========== BLOQUE 3: FOOTER (Pie de página) ========== -->
@@ -205,7 +195,7 @@
                 <ul class="footer-redes">
                     <li>
                         <a href="https://www.instagram.com/esa.no.la.tengo/?hl=es-la" target="_blank">
-                          <!-- No tengo face -->  
+                            <!-- No tengo face -->
                             <img src="./media/img/index/facebooktransparente.png" alt="Logo Facebook">
                             Facebook
                         </a>

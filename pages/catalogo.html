@@ -18,68 +18,66 @@
 <body>
 
   <!-- ========== BLOQUE 1: HEADER (Encabezado general del sitio) ========== -->
-  <header>
+     <header>
 
-    <!-- Logo de la marca -->
-    <div class="imagenlogo"> <!-- Contenedor del logo -->
-      <img src="../media/img/index/imglogo.png" alt="logo de la marca">
+        <!-- Logo de la marca -->
+        <div class="imagenlogo"> <!-- Contenedor del logo -->
+            <img src="../media/img/index/imglogo.png" alt="logo de la marca">
+        </div>
+
+        <!-- Título principal -->
+        <div class="titulo"> <!-- Contenedor del H1 -->
+            <h1>Boutique de plantas</h1>
+        </div>
+
+        <!-- nav principal con boostrap -->
+<nav class="navbar navbar-expand-lg menuburger">
+  
+    <div class="container-fluid">
+    
+    <!-- Botón hamburguesa -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+        aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+
+
+    <!-- Menú que colapsa -->
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="../pages/nosotros.html">Nosotros</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+             aria-expanded="false">Catálogo</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="../pages/catalogo.html">Interior</a></li>
+            <li><a class="dropdown-item" href="../pages/catalogo.html">Exterior</a></li>
+            <li><a class="dropdown-item" href="../pages/catalogo.html">Exóticas</a></li>
+            <li><a class="dropdown-item" href="../pages/enconstruccion.html">Productos</a></li>
+
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="../pages/contacto.html">Contacto</a></li>
+        <li class="nav-item"><a class="nav-link" href="../pages/comunidad.html">Comunidad</a></li>
+      </ul>
     </div>
-
-    <!-- Título principal -->
-    <div class="titulo"> <!-- Contenedor del H1 -->
-      <h1>Boutique de plantas</h1>
-    </div>
-
-    <!-- nav principal con boostrap -->
-
-    <ul class="nav nav-pills nav-principal">
-      <li class="nav-item">
-
-        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-
-        <!-- Drop down de catalogo-->
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="./pages/catalogo.html" role="button"
-          aria-expanded="false">Catálogo</a>
-
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="../pages/catalogo.html">Interior</a></li>
-          <li><a class="dropdown-item" href="../pages/catalogo.html">Exterior</a></li>
-          <li><a class="dropdown-item" href="../pages/catalogo.html">Exóticas</a></li>
-          <li>
-            <hr class="dropdown-divider">
-          </li>
-          <li><a class="dropdown-item" href="../pages/enconstruccion.html">Productos</a></li>
-        </ul>
-
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="../pages/contacto.html">Comunidad</a>
-      </li>
+  </div>
+</nav>
 
 
-    </ul>
+        <!-- Submenú / Login de la comunidad -->
+        <div class="loginmenu"> <!-- Contenedor de login/registro -->
+            <div class="opcionmenu"> <!-- Botón iniciar sesión -->
+                <a href="">Iniciar sesión</a>
+            </div>
+            <div class="opcionmenu"> <!-- Botón registrarse -->
+                <a href="">Registrarse</a>
+            </div>
+        </div>
 
-    <!-- Submenú / Login de la comunidad -->
-    <div class="menu"> <!-- Contenedor de login/registro -->
-      <div class="opcionmenu"> <!-- Botón iniciar sesión -->
-        <a href="">Iniciar sesión</a>
-      </div>
-      <div class="opcionmenu"> <!-- Botón registrarse -->
-        <a href="">Registrarse</a>
-      </div>
-    </div>
-
-  </header>
+    </header>
 
 
   <!-- ========== BLOQUE 2: main ========== -->
