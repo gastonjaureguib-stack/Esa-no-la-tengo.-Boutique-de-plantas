@@ -21,7 +21,9 @@ body {
 }
 
 
-/* --- Header ---- */
+/* =====================================================
+                         Header
+   ===================================================== */
 
 header {
     text-align: center;       
@@ -85,6 +87,8 @@ header {
     padding: 10px !important;
     position: absolute;
     bottom: 40px;
+     left: 50%;
+    transform: translateX(-50%);
     
 }
 /*Uso de important, porque boostrap no me permite sobreescribir el padding, sugerencia de Chat GPT*/
@@ -157,7 +161,9 @@ section.login a {
     color: white;
 }
 
-/*=== MAIN  === */
+/* =====================================================
+                      Main
+   ===================================================== */
 
 
 
@@ -216,7 +222,7 @@ main {
 /* Botón catálogo */
 .btn-catalogo {
   margin-top: 10px;
-  align-self: flex-start;
+  align-self: center;
 
   text-decoration: none;
   background-color: #2d6a4f;
@@ -280,13 +286,14 @@ main {
 
 /* Botón */
 .btn-comunidad {
+  display: inline-block;
   color: white;
   background-color: #044;
   text-decoration: none;
   padding: 10px 22px;
   border-radius: 40px;
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 30px;
   transition: 0.3s;
   text-align: center;
 }
@@ -368,11 +375,12 @@ footer {
 }
 
 /* ===== Columna 2: mapa + texto ===== */
-.footer-map {
-    width: 200px;
-    margin-bottom: 15px;
-}
 
+.footer-map {
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto 15px;
+}
 .footer-center {
     text-align: center;
 }
@@ -774,9 +782,7 @@ footer {
     background-color: rgb(7, 39, 13);
     border-radius: 20px;
 
- 
-
-}
+ }
 .textoscomunidad p{
   color: white;
   font-style: italic;
@@ -786,3 +792,65 @@ footer {
 .textoscomunidad p::first-letter  {
   font-size: 2rem;
 }
+
+/*estilos resonsives*/
+
+/* ===== Footer responsive ===== */
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr; /* columnas se apilan */
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-col {
+        padding: 10px 0;
+    }
+
+    /* Eliminamos líneas entre columnas en mobile */
+    .footer-col::after {
+        display: none;
+    }
+
+    .footer-redes {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        padding: 10px 0;
+    }
+
+    .footer-map {
+        margin: 0 auto 10px;
+        max-width: 100%;
+    }
+}
+/* ===============================
+   CONTACTO RESPONSIVE
+   =============================== */
+
+@media (max-width: 768px) {
+
+  .contacto {
+    grid-template-columns: 1fr; /* 1 sola columna */
+    gap: 30px;
+    text-align: center;
+  }
+
+  .contacto-img {
+    width: 100%;      /* antes 60% */
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .contacto ul {
+    text-align: center;
+  }
+
+  .mapa {
+    max-width: 100%;
+    height: 250px;
+    margin: 0 auto;
+  }
+}
+
+
