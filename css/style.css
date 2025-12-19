@@ -48,26 +48,23 @@ header {
     top: -30px; 
 }
 
-
-/*ESTILO AL CONTENEDOR DEL TEXTO PRINCIPAL*/
-.titulo {
-    position: relative;          
-    text-align: center;     
-      
-}
-
-/*ESTILO AL TEXTO PRINCIPAL*/
 .titulo h1 {
     font-size: 42px;          
     font-weight: bold;        
     color: white;           
 }
 
-/*ESTILO AL MENU*/
-.nav {
-    background-color: #033; 
-    padding: 10px;
-    border-radius: 8px;
+/*ESTILO AL TEXTO PRINCIPAL*/
+
+.navbar-toggler {
+  border: none;     
+  padding: 0;  
+  background-color: #022;
+  
+}
+.menuburger {
+    background-color: #022;
+    border-radius: 20px;
 }
 
 .nav-link {
@@ -78,9 +75,10 @@ header {
     color: rgb(206, 206, 30) !important;
 }
 
-.nav-pills .nav-link.active {
+.nav-link.active {
     background-color: rgb(206, 206, 30) !important;
     color: white !important;
+    border-radius: 20%;
 }
 
 .nav-principal {
@@ -91,6 +89,7 @@ header {
     transform: translateX(-50%);
     
 }
+
 /*Uso de important, porque boostrap no me permite sobreescribir el padding, sugerencia de Chat GPT*/
 
 
@@ -107,7 +106,7 @@ header {
 /*----- Login ------*/
 
 /*ESTILO A LA CAJA VERDE OSCURA*/
-.menu {
+.loginmenu {
     position: absolute;           
     top: 0px;                    
     right: 40px;                  
@@ -698,7 +697,6 @@ footer {
     margin-top: 20px;
 }
 
-/* ===== Pagina Contacto ===== */
 
 /* ===== Título contacto ===== */
 .titulocontacto {
@@ -853,4 +851,7 @@ footer {
   }
 }
 
+/* ===============================
+   Login de inicio
+   =============================== */
 
