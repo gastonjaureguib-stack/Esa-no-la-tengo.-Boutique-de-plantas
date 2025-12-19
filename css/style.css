@@ -88,7 +88,7 @@ header {
 
 .nav-link.active {
     background-color: rgb(206, 206, 30) !important;
-    color: white !important;
+    color: #033 !important;
     border-radius: 20%;
 }
 
@@ -186,7 +186,7 @@ main {
   background-color: #044;
 }
 
-/* ===== CATÁLOGO ===== */
+/* ===== CATÁLOGO Main===== */
 .catalogo {
   display: flex;
   justify-content: center;
@@ -204,14 +204,12 @@ main {
   border-radius: 20px;
   padding: 20px;
   max-width: 350px;
-
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 }
 
 /* Título */
 .catalogo-titulo {
   margin: 0;
-  font-size: 1.4rem;
   font-weight: bold;
 }
 
@@ -455,7 +453,7 @@ footer {
 .catalogo h2,
 .exoticas h2 {
  
-  font-size: 3rem;
+  font-size: 30px;
   font-weight: bold;
   text-align: center;
 
@@ -482,7 +480,7 @@ footer {
 
   .catalogo h2,
   .exoticas h2 {
-    font-size: 3.2rem;
+    font-size: 30px;
   }
 
   .catalogo .carousel-inner img,
