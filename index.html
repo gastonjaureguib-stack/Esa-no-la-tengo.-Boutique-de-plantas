@@ -81,92 +81,102 @@
 
     </header>
 
+    
     <!-- ========== BLOQUE 2: MAIN (Contenido principal del sitio) ========== -->
-    <main>
-        <div class="container">
 
-            <!-- ===== Sección Catálogo de Productos ===== -->
-            <section class="row"> <!-- Sección de productos principales -->
+<main>
 
+    <!-- ===== CATÁLOGO ===== -->
+    <section class="catalogo">
 
-                <!-- Producto 1: Adanzonii -->
-                <div class="col-md-4 col-sm-12"> <!-- Tarjeta de producto -->
-                    <h2>Nuestras plantas</h2>
-                    <img src="./media/img/index/portadamonsteraadanzonii.png" alt="Portada Monstera Adanzonii">
+        <!-- Card plantas -->
+        <article class="catalogo-card">
 
-                    <div class="caja_plantas"> <!-- Contenedor de info + botón -->
-                        <div> <!-- Info del producto -->
-                            <h3>Monstera Adanzonii</h3>
-                            <h4>Nuevo!</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        </div>
-                        <a href="./pages/catalogo.html">Buscar plantas</a>
-                    </div>
+            <h2 class="catalogo-titulo">Nuestras plantas</h2>
+
+            <img 
+                src="./media/img/index/portadamonsteraadanzonii.png" 
+                alt="Portada Monstera Adanzonii"
+                class="catalogo-img"
+            >
+
+            <div class="caja-plantas">
+                <div class="catalogo-texto">
+                    <h3>Monstera Adanzonii</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
 
+                <a href="./pages/catalogo.html" class="btn-catalogo">
+                    Buscar plantas
+                </a>
+            </div>
 
+        </article>
 
+        <!-- Card exóticas -->
+        <article class="catalogo-card">
 
+            <h2 class="catalogo-titulo">Nuestras Exóticas</h2>
 
-                <!-- ===== Sección Exóticas ===== -->
+            <img 
+                src="./media/img/index/portadamonsteravariegada.png" 
+                alt="Portada Monstera Variegada"
+                class="catalogo-img"
+            >
 
-                <!-- Producto 1: Adanzonii -->
-                <div class="col-md-4 col-sm-12"> <!-- Tarjeta de producto -->
-                    <h2>Nuestras Exóticas</h2>
-                    <img src="./media/img/index/portadamonsteravariegada.png" alt="Portada Monstera Adanzonii">
-
-                    <div class="caja_plantas"> <!-- Contenedor de info + botón -->
-                        <div> <!-- Info del producto -->
-                            <h3>Monstera Adanzonii</h3>
-                            <h4>Nuevo!</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        </div>
-                        <a href="./pages/catalogo.html">Buscar plantas</a>
-                    </div>
+            <div class="caja-plantas">
+                <div class="catalogo-texto">
+                    <h3>Monstera Adanzonii</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
 
+                <a href="./pages/catalogo.html" class="btn-catalogo">
+                    Buscar plantas
+                </a>
+            </div>
 
-            </section>
-        </div>
+        </article>
 
-        <div class="container">
-            <!-- ===== Artículo Comunidad / Aceite de Neem ===== -->
-            <article class="row">
-                <div class="col-12"> <!-- Contenedor principal -->
-
-
-
-                    <div class="comunidad_plantas"> <!-- Contenido escrito -->
-                        <img src="./media/img/index/aceitesneem.png" alt="Imagen de aceite de neem">
-                        <h2>Mucho más que un árbol.</h2>
-                        <p>
-                            El aceite de neem es un aliado natural imprescindible para el cuidado de tus plantas.
-                            Extraído de
-                            las semillas del árbol de neem, este aceite actúa como insecticida y fungicida orgánico,
-                            ayudando a proteger tus plantas de plagas como pulgones, cochinillas y hongos, sin dañar el
-                            entorno.
-                            Su acción suave pero efectiva lo convierte en una opción ideal para jardineros que buscan
-                            soluciones ecológicas, respetuosas con el ambiente y seguras para mascotas.
-                            Un pequeño gesto con un gran impacto: tus plantas más sanas, tu jardín más verde.
-                        </p>
-                        <a href="./pages/comunidad.html">Conocer comunidad plantil</a>
-                    </div>
-
-                </div>
-
-            </article>
-        </div>
-    </main>
+    </section>
 
 
+    <!-- ===== COMUNIDAD ===== -->
+    <section class="comunidad">
 
+        <article class="comunidad-card">
+
+            <img 
+                src="./media/img/index/aceitesneem.png" 
+                alt="Imagen de aceite de neem"
+                class="comunidad-img"
+            >
+
+            <div class="comunidad-texto">
+                <h2>Mucho más que un árbol.</h2>
+
+                <p>
+                    El aceite de neem es un aliado natural imprescindible para el cuidado de tus plantas.
+                    Extraído de las semillas del árbol de neem, actúa como insecticida y fungicida orgánico,
+                    ayudando a proteger tus plantas de plagas sin dañar el entorno.
+                </p>
+
+                <a href="./pages/comunidad.html" class="btn-comunidad">
+                    Conocer comunidad plantil
+                </a>
+            </div>
+
+        </article>
+
+    </section>
+
+</main>
 
 
     <!-- ========== BLOQUE 3: FOOTER (Pie de página) ========== -->
     <footer>
 
         <!-- Botón flotante de WhatsApp -->
-        <a href="https://wa.me/" class="wpbottom">
+        <a href="https://wa.me/" target="_blank" class="wpbottom">
             <img src="./media/img/index/botonwhatsapp.png" alt="Logo de WhatsApp">
         </a>
 
@@ -197,13 +207,14 @@
                 <h3>Seguinos en redes</h3>
                 <ul class="footer-redes">
                     <li>
-                        <a href="" target="_blank">
+                        <a href="https://www.instagram.com/esa.no.la.tengo/?hl=es-la" target="_blank">
+                          <!-- No tengo face -->  
                             <img src="./media/img/index/facebooktransparente.png" alt="Logo Facebook">
                             Facebook
                         </a>
                     </li>
                     <li>
-                        <a href="" target="_blank">
+                        <a href="https://www.instagram.com/esa.no.la.tengo/?hl=es-la" target="_blank">
                             <img src="./media/img/index/instagramtransparente.png" alt="Logo Instagram">
                             Instagram
                         </a>
