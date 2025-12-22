@@ -92,15 +92,6 @@ header {
     border-radius: 20%;
 }
 
-.nav-principal {
-    padding: 10px !important;
-    position: absolute;
-    bottom: 40px;
-     left: 50%;
-    transform: translateX(-50%);
-    
-}
-
 /*Uso de important, porque boostrap no me permite sobreescribir el padding, sugerencia de Chat GPT*/
 
 
@@ -312,7 +303,9 @@ main {
 
 
 
-/* ===== FOOTER GENERAL ===== */
+/* =====================================================
+                         Footer
+   ===================================================== */
 
 footer {
     grid-area: footer;
@@ -441,7 +434,9 @@ footer {
 
 
 
-/* ===== PAGINA CATALOGO ===== */
+/* =====================================================
+                Página catalogo
+   ===================================================== */
 
 /* ---- Carrusel  ---- */
 
@@ -667,9 +662,9 @@ footer {
   transition: transform 0.3s ease;
 
 }
-
-/* ===== Pagina Nosotros ===== */
-
+/* =====================================================
+               Pagina Nosotros
+   ===================================================== */
 .nosotros {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -766,7 +761,9 @@ footer {
 }
 
 
-/* ===== Pagina Comunidad===== */
+/* =====================================================
+                     página comunidad
+   ===================================================== */
 
 .comunidadplantil{
   display: flex;
@@ -800,7 +797,10 @@ footer {
   font-size: 2rem;
 }
 
-/*estilos resonsives*/
+
+/* =====================================================
+              Responsives
+   ===================================================== */
 
 /* ===== Footer responsive ===== */
 @media (max-width: 768px) {
@@ -814,7 +814,7 @@ footer {
         padding: 10px 0;
     }
 
-    /* Eliminamos líneas entre columnas en mobile */
+    
     .footer-col::after {
         display: none;
     }
@@ -864,14 +864,11 @@ footer {
    Login de inicio
    =============================== */
 
-@media (max-width: 768px) 
-{
-.imagenlogo {
-  margin-top: 70px;
-
-}
-
 @media (max-width: 768px) {
+  .imagenlogo {
+    margin-top: 70px;
+  }
+
   .loginmenu {
     left: 50%;
     transform: translateX(-50%);
@@ -879,7 +876,6 @@ footer {
   }
 }
 
-}
 
 @media (max-width: 768px) {
 
